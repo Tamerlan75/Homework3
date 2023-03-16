@@ -91,50 +91,45 @@
 // Задайте массив вещественных чисел. Найдите разницу между 
 // максимальным и минимальным элементов массива.
 
- int [] RandomArray (int Size, int Min, int Max)
-{
-    int [] newArr = new int [Size];
-    for (int i = 0; i < Size; i++)
-        newArr[i] = new Random().Next (Min, Max);
+//  int [] RandomArray (int Size, int Min, int Max)
+// {
+//     int [] newArr = new int [Size];
+//     for (int i = 0; i < Size; i++)
+//         newArr[i] = new Random().Next (Min, Max);
         
-    return newArr;
-}
+//     return newArr;
+// }
 
-void ShowArray (int [] arr)
-{
-    for (int i = 0; i < arr.Length; i++)
-        Console.Write (arr[i] + " ");
-}   
-Console.WriteLine();
+// void ShowArray (int [] arr)
+// {
+//     for (int i = 0; i < arr.Length; i++)
+//         Console.Write (arr[i] + " ");
+// }   
+// Console.WriteLine();
 
-void Difference (int [] arr) 
+// void Difference (int [] arr) 
+// {
+// int iMax = 0;
+// int iMin = 0;
+// for (int i = 1; i < arr.Length; i++)
+// {  
+// if (arr[i] > arr[iMax])  iMax = i; 
+// else
+// if (arr[i] < arr[iMin])  iMin = i;
+// }
+// int diff = arr[iMax] - arr[iMin]; 
+// Console.WriteLine($"difference betveen maximum and minimum: {diff}");
+// }
 
-{
-int iMax = 0;
-int iMin = 0;
-for (int i = 1; i < arr.Length; i++)
-{  
-if (arr[i] > arr[iMax]) 
-    arr[i] = arr[iMax];  
-    
- 
-if (arr [i] < arr[iMin])
-    arr[i] = arr[iMin]; 
-      
-}  
-  int diff = arr[iMax] - arr[iMin];    
-Console.WriteLine($"difference betveen maximum and minimum: {diff}");
-}
+// Console.WriteLine("Input Size");
+// int Size = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Input Size");
-int Size = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input Min");
+// int Min = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Input Min");
-int Min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input Max");
+// int Max = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Input Max");
-int Max = Convert.ToInt32(Console.ReadLine());
-
-int[] arr = RandomArray (Size, Min, Max);
-ShowArray (arr);
-Difference (arr);
+// int[] arr = RandomArray (Size, Min, Max);
+// ShowArray (arr);
+// Difference (arr);
