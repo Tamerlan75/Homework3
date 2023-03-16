@@ -112,14 +112,16 @@ void Difference (int [] arr)
 {
 int iMax = 0;
 int iMin = 0;
- for (int i = 1; i < arr.Length; i++)
-  {  
-     if (arr[i] > arr[iMax]) 
-      i = iMax;   
-    else 
-     if (arr [i] < arr[iMin])
-      i = iMin; 
-  }  
+for (int i = 1; i < arr.Length; i++)
+{  
+if (arr[i] > arr[iMax]) 
+    arr[i] = arr[iMax];  
+    
+ 
+if (arr [i] < arr[iMin])
+    arr[i] = arr[iMin]; 
+      
+}  
   int diff = arr[iMax] - arr[iMin];    
 Console.WriteLine($"difference betveen maximum and minimum: {diff}");
 }
