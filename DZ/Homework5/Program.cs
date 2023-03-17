@@ -91,23 +91,23 @@
 // Задайте массив вещественных чисел. Найдите разницу между 
 // максимальным и минимальным элементов массива.
 
-//  int [] RandomArray (int Size, int Min, int Max)
+//  double [] RandomArray (int Size, int Min, int Max)
 // {
-//     int [] newArr = new int [Size];
+//     double [] newArr = new double [Size];
 //     for (int i = 0; i < Size; i++)
-//         newArr[i] = new Random().Next (Min, Max);
+//         newArr[i] = Math.Round(new Random().Next (Min, Max) + new Random().NextDouble (), 2);
         
 //     return newArr;
 // }
 
-// void ShowArray (int [] arr)
+// void ShowArray (double [] arr)
 // {
 //     for (int i = 0; i < arr.Length; i++)
 //         Console.Write (arr[i] + " ");
 // }   
 // Console.WriteLine();
 
-// void Difference (int [] arr) 
+// void Difference (double [] arr) 
 // {
 // int iMax = 0;
 // int iMin = 0;
@@ -117,7 +117,7 @@
 // else
 // if (arr[i] < arr[iMin])  iMin = i;
 // }
-// int diff = arr[iMax] - arr[iMin]; 
+// double diff = arr[iMax] - arr[iMin]; 
 // Console.WriteLine($"difference betveen maximum and minimum: {diff}");
 // }
 
@@ -130,6 +130,6 @@
 // Console.WriteLine("Input Max");
 // int Max = Convert.ToInt32(Console.ReadLine());
 
-// int[] arr = RandomArray (Size, Min, Max);
+// double[] arr = RandomArray (Size, Min, Max);
 // ShowArray (arr);
 // Difference (arr);
