@@ -1,25 +1,25 @@
 ﻿
-int [] RandomArray (int Size, int Min, int Max)
+int [] RandomArray (int Size)
 {
-    int Size = M;
     int [] newArr = new int [Size];
     for (int i = 0; i < Size; i++)
         Console.WriteLine("Input digits");
         newArr[i] = Convert.ToInt32(Console.ReadLine());
+     return newArr;   
 }        
-    return newArr;
     
-void Even (int [] arr)
+    
+void Even (int [] Arr)
 {
  int nam = 0;
- for (int i = 0; i < arr.Length; i++)
+ for (int i = 0; i < Arr.Length; i++)
   {  
-     if (arr[i] % 2 > 0) 
+     if (Arr[i] > 0) 
          nam++;
   }      
 Console.WriteLine($"Number of even numbers: {nam}");
 }
 Console.WriteLine("Input M");
-int M  = Convert.ToInt32(Console.ReadLine());
-int[arr] = RandomArray( Size, Min, Max);
-void Even (arr); 
+int Size  = Convert.ToInt32(Console.ReadLine());
+int[] Arr = RandomArray( Size);
+Even(Arr); 
